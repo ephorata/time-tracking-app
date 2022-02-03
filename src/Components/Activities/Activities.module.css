@@ -3,11 +3,18 @@
  flex-direction:column;
 }
 
-@media  screen and (min-width:49rem) {
-    .activities{
+
+@media  screen and (min-width:500px){
+ .activities{
         display: grid;
         grid-gap:2rem ;
         grid-row-gap: 2rem;
+        grid-template-columns: repeat(2,1fr);
+}
+}
+@media  screen and (min-width:863px) {
+    .activities{
+     
         grid-template-columns: repeat(3,1fr);
         
     }
