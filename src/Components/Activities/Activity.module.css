@@ -111,7 +111,7 @@
 
 
 
-@media screen and (min-width: 863px) {
+@media screen and (min-width: 500px) {
   .activity {
     max-width: 20v;
     margin:0;
