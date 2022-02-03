@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+*,*::after,*::before {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: var(--color-very-dark-blue);
+    font-family:'Rubik', sans-serif;
+}
+
+:root {
+    --primary-color-blue: hsl(246, 80%, 60%); 
+
+--work: hsl(15, 100%, 70%); /*work */
+--play : hsl(195, 74%, 62%); /*play */
+--study: hsl(348, 100%, 68%);  /*study */
+--exercise : hsl(145, 58%, 55%); /*exercise */
+--social : hsl(264, 64%, 52%); /*social */
+--self-care: hsl(43, 84%, 65%); /*self care */
+
+/* neutral */
+
+--color-very-dark-blue: hsl(226, 43%, 10%);
+--color-dark-blue: hsl(235, 46%, 20%);
+--color-desaturated-blue: hsl(235, 45%, 61%);
+--color-pale-blue: hsl(236, 100%, 87%);
+
 }

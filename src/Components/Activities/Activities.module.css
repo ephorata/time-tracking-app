@@ -1,0 +1,15 @@
+.activities {
+ display: flex;
+ flex-direction:column;
+}
+
+@media  screen and (min-width:49rem) {
+    .activities{
+        display: grid;
+        grid-gap:2rem ;
+        grid-row-gap: 2rem;
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+
+}

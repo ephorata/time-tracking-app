@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Activities from "./Components/Activities/Activities";
+import Navbar from "./Components/Navbar/Navbar";
+import classes from "./App.module.css";
 
-function App() {
+const App = () => {
+  const [timeFrame, setTimeFrame] = useState("weekly");
+  const handleTimeFrameChange = (timeFrame) => {
+    //this will be responsible for changing the time frame;
+    console.log("time frame changer", timeFrame);
+    setTimeFrame(timeFrame);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className={classes.app}>
+      <Navbar handleTimeFrame={handleTimeFrameChange} timeFrame={timeFrame} />
+      <Activities timeFrame={timeFrame} />
+    </main>
   );
-}
+};
 
 export default App;
