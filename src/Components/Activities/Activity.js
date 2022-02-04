@@ -1,6 +1,5 @@
 import React from "react";
 import classes from "./Activity.module.css";
-import { ReactComponent as IconEllipsis } from "../../assets/images/icon-ellipsis.svg";
 import Icon from "../Icon/Icon";
 
 const Activity = ({ title, timeframe }) => {
