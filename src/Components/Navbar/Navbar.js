@@ -14,20 +14,20 @@ const Navbar = ({ handleTimeFrame, timeFrame }) => {
       </div>
       <ul className={classes["nav__bottom"]}>
         <li
-          className={timeFrame === "Daily" ? classes.active : ""}
-          onClick={() => handleTimeFrame("Daily")}
+          className={timeFrame === "daily" ? classes.active : ""}
+          onClick={() => handleTimeFrame("daily")}
         >
           Daily
         </li>
         <li
-          className={timeFrame === "Weekly" ? classes.active : ""}
-          onClick={() => handleTimeFrame("Weekly")}
+          className={timeFrame === "weekly" ? classes.active : ""}
+          onClick={() => handleTimeFrame("weekly")}
         >
           Weekly
         </li>
         <li
-          className={timeFrame === "Monthly" ? classes.active : ""}
-          onClick={() => handleTimeFrame("Monthly")}
+          className={timeFrame === "monthly" ? classes.active : ""}
+          onClick={() => handleTimeFrame("monthly")}
         >
           Monthly
         </li>

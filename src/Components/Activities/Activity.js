@@ -3,12 +3,13 @@ import classes from "./Activity.module.css";
 import { ReactComponent as IconEllipsis } from "../../assets/images/icon-ellipsis.svg";
 import Icon from "../Icon/Icon";
 
-const Activity = ({ title, timeFrame }) => {
+const Activity = ({ title, timeframe }) => {
   const activity =
     title.split(" ").length === 1
       ? title.toLowerCase()
       : title.toLowerCase().split(" ").join("-");
-  console.log(activity);
+  console.log(timeframe);
+
   return (
     <div
       className={classes.activity}
@@ -19,8 +20,8 @@ const Activity = ({ title, timeFrame }) => {
       </div>
       <div className={classes["activity__body"]}>
         <div className={classes["activity__sub-body"]}>
-          <h3>32hrs</h3>
-          <p>Last Week - 36hrs</p>
+          <h3>{timeframe.current}hrs</h3>
+          <p>Last Week - {timeframe.previous}hrs</p>
         </div>
         <div className={classes["activity__header"]}>
           <h3>{title}</h3>

@@ -10,12 +10,15 @@ import iconStudy from "../../assets/images/icon-study.svg";
 import iconSocial from "../../assets/images/icon-social.svg";
 import iconSelfCare from "../../assets/images/icon-self-care.svg";
 
-const Activities = ({ timeframe }) => {
+const Activities = ({ timeFrame }) => {
   console.log(data);
   return (
     <section className={classes.activities}>
       {data.map((activity) => (
-        <Activity title={activity.title} timeframes={activity.timeframes} />
+        <Activity
+          title={activity.title}
+          timeframe={activity.timeframes[`${timeFrame}`]}
+        />
       ))}
     </section>
   );
